@@ -48,15 +48,13 @@ Most special characters lose their special status and become literals within bra
 ^ is literal if not at the beginning of a bracket expression
 \, retains its meaning in bracket expressions, permitting the usage of the special escape sequences: such as \n, \t, \w, \d, etc.
 ### Character Classes
-These are special sequences representing commonly used character sets:
-\w is word (program identifier) character: [A-Za-z0-9_]
-\W is non-word character: [^A-Za-z0-9_]
-\s is a whitespace character: [ \f\n\r\t]
-\S is a non-whitespace character: [^ \f\n\r\t]
-\d is a digit character: [0-9]
-\D is a non-digit character: [^0-9]
-### The OR Operator
+[...]: Accept ANY ONE of the character within the square bracket, e.g., [aeiou] matches "a", "e", "i", "o" or "u".
+[.-.] (Range Expression): Accept ANY ONE of the character in the range, e.g., [0-9] matches any digit; [A-Za-z] matches any uppercase or lowercase letters.
+[^...]: NOT ONE of the character, e.g., [^0-9] matches any non-digit.
+Only these four characters require escape sequence inside the bracket list: ^, -, ], \.
 
+### The OR Operator
+ (|): E.g., the regex four|4 accepts strings "four" or "4".
 ### Flags
 XRegExp provides four new flags (n, s, x, A), which can be combined with native flags and arranged in any order. Unlike native flags, non-native flags do not show up as properties on regular expression objects. 
 ### Character Escapes
@@ -64,17 +62,7 @@ XRegExp provides four new flags (n, s, x, A), which can be combined with native 
 
 \A - start of a string
 
-\b - word boundary. The zero-length string between \w and \W or \W and \w.
-
-\B - not at a word boundary
-
-\cX - ASCII control character
-
 \d - single digit [0-9]
-
-\D - single character that is NOT a digit [^0-9]
-
-\E - stop processing escaped characters
 
 \l - match a single lowercase letter [a-z]
 
@@ -84,27 +72,17 @@ XRegExp provides four new flags (n, s, x, A), which can be combined with native 
 
 \r - carriage return
 
-\s - single whitespace character
-
-\S - single character that is NOT white space
-
 \u - single uppercase character [A-Z]
 
 \U - single character that is not uppercase [^A-Z]
 
-\w - word character [a-zA-Z0-9_]
+\w - word character [a-zA-Z0-9_] 
 
-\W - single character that is NOT a word character [^a-zA-Z0-9_]
-
-\x00-\xFF - hexadecimal character
-
-\x{0000}-\x{FFFF} - Unicode code point
-
-\Z - end of a string before the line break
 ## Author
 Regular expression for parsing an author string into an object following npm conventions.
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+
 Reycel Huffman is new to coding. I'm learning all about html, css, javascript, nodes, MYSQL. 
 Here's my GitHub link:
 https://github.com/reycelhuffman
