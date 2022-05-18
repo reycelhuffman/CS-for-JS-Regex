@@ -105,3 +105,7 @@ XRegExp provides four new flags (n, s, x, A), which can be combined with native 
 Regular expression for parsing an author string into an object following npm conventions.
 
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Reycel Huffman is new to coding. I'm learning all about html, css, javascript, nodes, MYSQL. 
+Here's my GitHub link:
+https://github.com/reycelhuffman
+
