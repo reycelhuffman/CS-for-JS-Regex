@@ -29,6 +29,9 @@ $ matches at the end of the target string
 \b matches on a word boundary, i.e., the previous or subsequent character is not a word character
 ### Quantifiers
 Quantifier	Description
+Quantifiers indicate numbers of characters or expressions to match.
+
+Examples: 
 
 *	Match zero or more times.
 +	Match one or more times.
@@ -61,21 +64,14 @@ XRegExp provides four new flags (n, s, x, A), which can be combined with native 
 \\ - single backslash
 
 \A - start of a string
-
 \d - single digit [0-9]
-
 \l - match a single lowercase letter [a-z]
-
 \L - single character that is not lowercase [^a-z]
-
-\Q - ignore escaped characters until \E is found
-
+\Q - ignore escaped characters until 
+\E is found
 \r - carriage return
-
 \u - single uppercase character [A-Z]
-
 \U - single character that is not uppercase [^A-Z]
-
 \w - word character [a-zA-Z0-9_] 
 
 ## Author
