@@ -3,8 +3,7 @@ In this Regex Tutorial we will be learning about what Regular Expression or Rege
 
 ## Summary
 Regular Expression or Regex in short is a powerful searching tool used to find pattern within a text string. Two most common used for Regex is to validate text and search through text, one line of Regex can replace a whole dozen lines of codes. 
-Match Zip Codes (5 digit and 9 digit)
-/^[0-9]{5}(-[0-9]{4})?$/
+
 
 ## Table of Contents
 
